@@ -1,3 +1,3 @@
 # jenkins-jobs
 
-##William was here!!!
+This repo will hold the jenkinsfile definitions.
