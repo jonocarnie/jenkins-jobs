@@ -15,7 +15,7 @@ pipelineJob('projects/ExampleA') {
 pipelineJob('projects/ExampleB') {
     definition {
         cps {
-            script(readFileFromWorkspace('ProjectA/Jenkinsfile'))
+            script(readFileFromWorkspace('ProjectB/Jenkinsfile'))
             sandbox()
         }
     }
