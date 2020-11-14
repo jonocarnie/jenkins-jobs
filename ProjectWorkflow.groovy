@@ -1,9 +1,9 @@
-folder('projects') {
-    displayName('Projects')
+folder('manualprojects') {
+    displayName('ManualProjects')
     description('Folder for all projects')
 }
 
-pipelineJob('projects/ExampleA') {
+pipelineJob('manualprojects/ExampleOne') {
     definition {
         cps {
             script(readFileFromWorkspace('ProjectA/Jenkinsfile'))
@@ -12,7 +12,7 @@ pipelineJob('projects/ExampleA') {
     }
 }
 
-pipelineJob('projects/ExampleB') {
+pipelineJob('manualprojects/ExampleTwo') {
     definition {
         cps {
             script(readFileFromWorkspace('ProjectB/Jenkinsfile'))
