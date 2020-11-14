@@ -10,7 +10,7 @@ job("MyProject-Build2") {
     scm {
         git {
             remote {
-                url gitUrl.
+                url gitUrl
                 branch "origin/master"
             }
             extensions {
