@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Verifying maven') {
+            steps {
+                mvn -v
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing Project A'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying Project A'
+            }
+        }
+    }
+}

@@ -20,3 +20,17 @@ pipelineJob('manualprojects/ExampleTwo') {
         }
     }
 }
+
+folder('MavenProjects'){
+    displayName('Maven Projects')
+    description('Folder to house maven projects')
+}
+
+
+pipelineJob('MavenProjects/MavenBuild') {
+    definition {
+        cps {
+            script(readFileFromWorkspace('MavenProject/Jenkinsfile'))
+        }
+    }
+}
